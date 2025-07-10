@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class additiontwofunctions {
+    public static void my_function(int n1,int n2) {
+        int addition=n1+n2;
+        System.out.println("addition two numbers ="+addition);
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the first number:");
+        int n1=sc.nextInt();
+        System.out.println("enter the second number:");
+        int n2=sc.nextInt();
+        my_function(n1, n2);
+        sc.close();
+    }
+}
+
+output:
+enter the first number:
+2
+enter the second number:
+3
+addition two numbers =5
