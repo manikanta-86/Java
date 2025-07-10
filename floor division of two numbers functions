@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class floordivisionfunctions {
+    public static void my_function(int n1,int n2) {
+        if(n2==0){
+            System.out.println("error! floor division not possible");
+        }
+        else{
+            int floor=n1/n2;
+            System.out.println("floor division two numbers ="+floor);
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the first number:");
+        int n1=sc.nextInt();
+        System.out.println("enter the second number:");
+        int n2=sc.nextInt();
+        my_function(n1, n2);
+        sc.close();
+    }
+}
+
+output:
+enter the first number:
+4
+enter the second number:
+2
+floor division of two numbers =2
