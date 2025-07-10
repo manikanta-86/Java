@@ -1,0 +1,10 @@
+public class divtwo {
+    public static void main(String[] args) {
+        int n1=10;
+        int n2=5;
+        System.out.println("div two numbers ="+(n1/n2));
+    }
+}
+
+output:
+div two numbers =2
