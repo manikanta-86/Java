@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class subtractiontwo {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the first number:");
+        int n1=sc.nextInt();
+        System.out.println("enter the second number:");
+        int n2=sc.nextInt();
+        int difference=n1-n2;
+        System.out.println("subtraction two numbers ="+(n1-n2));
+        sc.close();
+    }
+}
+
+output:
+enter the first number:
+10
+enter the second number:
+2
+subtraction two numbers =8
