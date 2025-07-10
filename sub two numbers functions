@@ -1,0 +1,13 @@
+public class subtwofunctions {
+    public static void my_function(int n1,int n2) {
+        System.out.println("sub two numbers ="+(n1-n2));
+    }
+    public static void main(String[] args) {
+        int n1=10;
+        int n2=20;
+        my_function(n1, n2);
+    }
+}
+
+output:
+sub two numbers =-10
