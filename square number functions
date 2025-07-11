@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class squarenumberfunctions {
+    public static void my_function(int n){
+        int square=n*n;
+        System.out.println("square number ="+square);
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the number:");
+        int n=sc.nextInt();
+        my_function(n);
+        sc.close();
+    }
+}
+
+output:
+enter the number:
+2
+square number =4
