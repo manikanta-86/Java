@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class personeligiblefunctions {
+    public static void my_function(int age) {
+        if(age>=18){
+            System.out.println("person eligible to vote");
+        }
+        else{
+            System.out.println("person not eligible to vote he needs "+(18-age)+" more years to vote");
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner( System.in);
+        System.out.println("enter the age of a person:");
+        int age=sc.nextInt();
+        my_function(age);
+        sc.close();
+    }
+}
+
+output:
+enter the age of a person:
+23
+person eligible to vote
