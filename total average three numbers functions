@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class totalaveragethreefunctions {
+    public static void my_function(int n1,int n2,int n3) {
+        int total=n1+n2+n3;
+        double average=total/3;
+        System.out.println("total ="+total);
+        System.out.println("average ="+average);
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the first number:");
+        int n1=sc.nextInt();
+        System.out.println("enter the second number:");
+        int n2=sc.nextInt();
+        System.out.println("enter the third number:");
+        int n3=sc.nextInt();
+        my_function(n1, n2, n3);
+        sc.close();
+    }
+}
+
+output:
+enter the first number:
+2
+enter the second number:
+3
+enter the third number:
+4
+total =9
+average =3.0
