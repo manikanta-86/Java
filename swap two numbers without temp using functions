@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class swaptwo2functions {
+    public static void my_function(int first,int second) {
+        System.out.println("before swapping first number ="+first);
+        System.out.println("before swapping second number ="+second);
+        first=first+second;
+        second=first-second;
+        first=first-second;
+        System.out.println("after swapping first number ="+first);
+        System.out.println("after swapping second number ="+second);
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the first number:");
+        int first=sc.nextInt();
+        System.out.println("enter the second number:");
+        int second=sc.nextInt();
+        my_function(first, second);
+        sc.close();
+    }
+}
+
+output:
+enter the first number:
+2
+enter the second number:
+3
+before swapping first number =2
+before swapping second number =3
+after swapping first number =3
+after swapping second number =2
