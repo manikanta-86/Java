@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class upperlowerinbuilt {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the character:");
+        char c=sc.next().charAt(0);
+        if(Character.isUpperCase(c)){
+            System.out.println("uppercase alphabet");
+        }
+        else if(Character.isLowerCase(c)){
+            System.out.println("lowercase alphabet");
+        }
+        else{
+            System.out.println("not an alphabet");
+        }
+        sc.close();
+    }
+}
+
+output:
+enter the character:
+D
+uppercase alphabet
