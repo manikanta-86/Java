@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class lengthstringfunctions {
+    public static void my_function(String s){
+        int length=s.length();
+        System.out.println("length string ="+length);
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the string:");
+        String s=sc.nextLine();
+        my_function(s);
+        sc.close();
+    }
+}
+
+
+output:
+enter the string:
+mani
+length string =4
