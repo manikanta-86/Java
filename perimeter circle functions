@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class perimetercirclefunctions {
+    public static void my_function(float r,float pi) {
+        double perimeter=2*pi*r;
+        System.out.println("perimeter circle ="+perimeter);
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the radius:");
+        float r=sc.nextFloat();
+        float pi=3.14f;
+        my_function(r, pi);
+        sc.close();
+    }
+}
+
+output:
+enter the radius:
+5
+perimeter circle =31.400001525878906
