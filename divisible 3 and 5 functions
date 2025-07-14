@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class divisibleby3and5functions {
+    public static void my_function(int n) {
+        if((n%3==0)&&(n%5==0)){
+            System.out.println("divisible by both 3 and 5");
+        }
+        else if(n%3==0){
+            System.out.println("divisible by only 3");
+        }
+        else if(n%5==0){
+            System.out.println("divisible by only 5");
+        }
+        else{
+            System.out.println("not divisible by both 3 and 5");
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the number:");
+        int n=sc.nextInt();
+        my_function(n);
+        sc.close();
+    }
+}
+
+output:
+enter the number:
+15
+divisible by both 3 and 5
