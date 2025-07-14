@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class numberpalindromefunctions {
+    public static void my_function(int n) {
+        int reverse=0;
+        int original=n;
+        while(n!=0){
+            int digit=n%10;
+            reverse=reverse*10+digit;
+            n/=10;
+        }
+        if(reverse==original){
+            System.out.println("palindrome");
+        }
+        else{
+            System.out.println("not palindrome");
+        }
+
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the number:");
+        int n=sc.nextInt();
+        my_function(n);
+        sc.close();
+    }
+}
+
+output:
+enter the number:
+123
+not palindrome
