@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class perimetersquarefunctions {
+    public static void my_function(int s) {
+        int perimeter=4*s;
+        System.out.println("perimeter square ="+perimeter);
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the side:");
+        int s=sc.nextInt();
+        my_function(s);
+        sc.close();
+    }
+}
+
+output:
+enter the side:
+4
+perimeter square =16
