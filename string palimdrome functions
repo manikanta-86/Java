@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class stringpalindromefunctions {
+    public static void my_function(String s){
+        String s2="";
+        String original=s;
+        for(int i=s.length()-1;i>=0;i--){
+            s2+=s.charAt(i);
+        }
+        if(original.equals(s2)){
+            System.out.println("palindrome");
+        }
+        else{
+            System.out.println("not palindrome");
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the string:");
+        String s=sc.nextLine();
+        my_function(s);
+        sc.close();
+    }
+}
+
+output:
+enter the string:
+madam
+palindrome
