@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class upperlowerfunctions {
+    public static void my_function(char c) {
+        if(c>='A'&&c<='Z'){
+            System.out.println("uppercase alphabet");
+        }
+        else if(c>='a'&& c<='z'){
+            System.out.println("lowercase alphabet");
+        }
+        else{
+            System.out.println("not an alphabet");
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the character:");
+        char c=sc.nextLine().charAt(0);
+        my_function(c);
+        sc.close();
+    }
+}
+
+output:
+enter the character:
+D
+uppercase alphabet
