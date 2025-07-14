@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class areasquarefunctions {
+    public static void my_function(int side) {
+        int area=side*side;
+        System.out.println("area square ="+area);
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the side:");
+        int side=sc.nextInt();
+        my_function(side);
+        sc.close();
+    }
+}
+
+output:
+enter the side:
+5
+area square =25
