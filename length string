@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class lengthstring {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the string:");
+        String s=sc.nextLine();
+        int length=s.length();
+        System.out.println("length string ="+length);
+        sc.close();
+    }
+}
+
+output:
+enter the string:
+mani
+length string =4
