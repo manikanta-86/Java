@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class arearectangle {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the length:");
+        float s1=sc.nextFloat();
+        System.out.println("enter the breadth:");
+        float s2=sc.nextFloat();
+        float area=s1*s2;
+        System.out.println("area rectangle ="+area);
+        sc.close();
+    }
+}
+
+output:
+enter the length:
+11
+enter the breadth:
+13
+area rectangle =143.0
