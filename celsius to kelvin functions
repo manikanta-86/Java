@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class celsiuskelvinfunctions {
+    public static void my_function(float celsius) {
+        double kelvin=celsius+273;
+        System.out.println("kelvin ="+kelvin);
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the celsius value:");
+        float celsius=sc.nextFloat();
+        my_function(celsius);
+        sc.close();
+    }
+}
+
+
+output:
+enter the celsius value:
+23
+kelvin =296.0
